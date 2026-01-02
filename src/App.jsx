@@ -3,7 +3,7 @@ import Movies from "./Movies";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/demo-movies">
       <Routes>
         <Route path="/" element={<Movies />} />
       </Routes>
