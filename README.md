@@ -1,16 +1,30 @@
-# React + Vite
+# Demo Movies 🎵 – Aprenda Inglês com Filmes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é uma demonstração de um projeto maior. Ele consiste em atividades para ajudar pessoas a aprender inglês de forma autodidata. Em resumo, o estudante assiste ao trailer de um filme e precisa preencher as palavras faltantes. Quando a palavra está correta, o campo fica com fundo verde.
 
-Currently, two official plugins are available:
+Esta demonstração reproduz visualmente a proposta do projeto completo, onde os alunos são autenticados com JWT e o progresso é salvo no MongoDB.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivo
 
-## React Compiler
+Mostrar a estrutura e funcionamento básico da aplicação focada em aprendizado de inglês através de filmes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias
 
-## Expanding the ESLint configuration
+- React + Vite
+- JavaScript
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Status do Projeto
+
+Este repositório representa apenas uma **demonstração visual** do projeto principal.
+
+## Observação
+
+Não há backend conectado nesta demo. No projeto completo:
+
+- usuários são autenticados via JWT
+- progresso é salvo no MongoDB
+
+---
+
+✨ Protótipo feito com carinho para estudos e demonstração.

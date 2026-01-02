@@ -1,68 +1,226 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container-music {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  background-image: url("/images/movies.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-music {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(18, 18, 98);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.icon-header {
+  font-size: 35px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.content-music {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.iframe-movies {
+  width: 81.5%;
+  height: 62%;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+
+.footer-music {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(18, 18, 98);
+
+}
+
+.section-music {
+  width: 50%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.dev-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 0.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+.git-icon {
+  font-size: 25px;
+  color: back;
+}
+
+.main-music {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 0.5em;
+  margin: 1rem;
+
+}
+
+.lyrics-box {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  overflow-y: auto;
+  line-height: 250%;
+}
+
+.lyrics-input {
+  width: 7vw;
+  margin: 0 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 0.1rem;
+  text-align: center;
+}
+
+.correct-word {
+  background-color: green;
+  color: white;
+}
+
+.button-movies-subtitle {
+  padding: 12px;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  border: none;
+}
+
+.button-movies-synopsis {
+  padding: 12px;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  border: none;
+}
+
+.buttons-music {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  padding: 15px;
+  color: white;
+}
+
+.vocabulary-box {
+  width: 80%;
+  height: 50%;
+  line-height: 180%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+
+
+@media (max-width: 780px) {
+
+
+  .grid-container-music {
+    grid-template-rows: 8vh 84vh 8vh;
   }
-  a:hover {
-    color: #747bff;
+
+  .content-music {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+
   }
-  button {
-    background-color: #f9f9f9;
+
+  .section-music {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 90%;
+
   }
+
+  .vocabulary-box {
+    width: 100%;
+    height: 38vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+    padding-left: 10px;
+
+
+
+  }
+
+  .main-music {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    height: 38vh;
+
+  }
+
+  .vocabulary-box .teste {
+    color: white;
+    padding-left: 0;
+    height: 30px;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .lyrics-box {
+    color: white;
+    width: 100%;
+    height: 38vh;
+    padding-left: 5vw;
+    overflow-y: auto;
+    line-height: 250%;
+  }
+
+  .lyrics-input {
+    width: 80px;
+    max-width: 100%;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
 }
