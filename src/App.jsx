@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Movies from "./Movies";
 
 function App() {
@@ -6,6 +6,8 @@ function App() {
     <BrowserRouter basename="/demo-movies">
       <Routes>
         <Route path="/" element={<Movies />} />
+        <Route path="*" element={<Navigate to="/" />} />{" "}
+        {/* Garante fallback */}
       </Routes>
     </BrowserRouter>
   );

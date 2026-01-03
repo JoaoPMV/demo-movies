@@ -50,7 +50,7 @@ So, how was the {first} day of {school}? It was fine, I {guess}. I don't know. D
       <div className="grid-container-music">
         <header className="header-music">
           <p>
-            Projeto demonstrativo (Frontend Only) - Learn English with movies
+            Projeto demonstrativo (Frontend Only)
           </p>
         </header>
         <div className="content-music">
